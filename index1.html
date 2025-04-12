@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index1.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <a href="category.html"></a>
+    <a href="about.html"></a>
+    <a href="contact.html"></a>
+    <a href="trackorder.html"></a>
+    <a href="login.html"></a>
+    <script src="index.js"></script>
+</head>
+<body>
+
+<header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-black shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="index1.html">🛋 Furniture Store</a>
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <form class="d-flex search-bar w-50">
+                    <input class="form-control me-2" type="search" placeholder="Search furniture..." aria-label="Search">
+                    <button class="btn btn-warning" type="submit">search<i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bottom Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trackorder.html">Track Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policies</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="shipping.html">Shipping</a></li>
+                            <li><a class="dropdown-item" href="refund.html">Refund</a></li>
+                            
+                            <li><a class="dropdown-item" href="terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section class="myshop text-center text-white bg-secondary py-5">
+    <div class="container">
+        <h1 class="display-4">Welcome to Furniture Store</h1>
+        <p class="lead">Find the best furniture for your home at unbeatable prices!</p>
+        <a href="category.html" class="btn btn-light btn-lg">Shop Now</a>
+    </div>
+</section>
+
+
+<section class="container-fluid px-0">
+    <div id="furnitureCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="D:\navabar\sofa.webp" class="d-block w-100" alt="Sofa">
+            </div>
+            <div class="carousel-item">
+                <img src="D:\navabar\table.jpg" class="d-block w-100" alt="Table">
+            </div>
+            <div class="carousel-item">
+                <img src="D:\navabar\bed.jpg" class="d-block w-100" alt="Bed">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#furnitureCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#furnitureCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
+
+<!-- Products -->
+<section class="container mt-5">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row">
+        <div class="col-md-4 col-sm-6 mb-4 d-flex">
+            <div class="card w-100">
+                <img src="D:\navabar\sofa.jpg" class="card-img-top img-fluid product-img" alt="Sofa">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Luxury Sofa</h5>
+                    <p class="card-text flex-grow-1">Comfortable and stylish sofa for your living room.</p>
+                    <a href="category.html" class="btn btn-warning mt-auto">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4 d-flex">
+            <div class="card w-100">
+                <img src="D:\navabar\chair.jpg" class="card-img-top img-fluid product-img" alt="Table">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Wooden Dining Table</h5>
+                    <p class="card-text flex-grow-1">Elegant dining table for your home.</p>
+                    <a href="category.html" class="btn btn-warning mt-auto">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4 d-flex">
+            <div class="card w-100">
+                <img src="D:\navabar\bead.jpg" class="card-img-top img-fluid product-img" alt="Bed">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">King Size Bed</h5>
+                    <p class="card-text flex-grow-1">Spacious and comfortable bed for a perfect sleep.</p>
+                    <a href="category.html" class="btn btn-warning mt-auto">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-md-3">
+                <h5>About Us</h5>
+                <p>We provide the best quality furniture at affordable prices. Transform your home with our elegant and durable furniture.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Policies -->
+            <div class="col-md-3">
+                <h5>Policies</h5>
+                <ul class="list-unstyled">
+                    <li><a href="shipping.html">Shipping Policy</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <p>Email: support@furniturestore.com</p>
+                <p>Phone: +91 9876543210</p>
+                <p>Address: Agra, India</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Social Media and Copyright -->
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p>&copy; 2025 Furniture Store. All rights reserved.</p>
+                <a href="#" class="me-2">Facebook<i class="fab fa-facebook"></i></a>
+                <a href="#" class="me-2">Instagram<i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

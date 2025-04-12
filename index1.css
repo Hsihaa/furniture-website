@@ -1,0 +1,363 @@
+/* Navbar Top (Sticky) */
+.navbar:first-of-type {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    flex-grow: 1;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400px;
+    line-height: 1.5;
+}
+
+/* Bottom Navbar Styling */
+.navbar-dark {
+    background-color: #212529 !important;
+}
+
+.navbar-dark .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect: Border around links */
+.navbar-dark .nav-link:hover {
+    background-color: #495057;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+.carousel-container {
+    width: 90%; 
+    margin: auto; 
+}/*
+.carousel img {
+    width: 100%; 
+    height: auto; 
+} */
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navbar Links Spacing */
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+.product-img {
+    height: 250px; /* Sab images ek height ki rahengi */
+    object-fit: cover; /* Image crop ho jayegi but distorted nahi hogi */
+}
+
+/*trackorder css*/
+
+body{background-color: rgba(255, 160, 122, 0.767);}
+.track-form {
+    background-image: url("tack.jpg");
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section {
+    margin-top: 50px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* Navbar Top (Sticky) */
+.navbar:first-of-type {
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+/* Search Bar Styling */
+.search-bar {
+flex-grow: 1;
+display: block;
+width: 100%;
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400px;
+line-height: 1.5;
+}
+
+/* Bottom Navbar Styling */
+.navbar-dark {
+background-color: #212529 !important;
+}
+
+.navbar-dark .nav-link {
+color: #ffffff !important;
+font-weight: 500;
+padding: 10px 15px;
+transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect: Border around links */
+.navbar-dark .nav-link:hover {
+background-color: #495057;
+border-radius: 4px;
+border: 1px solid white;
+}
+
+
+/* Navbar Links Spacing */
+.navbar-nav {
+width: 100%;
+display: flex;
+justify-content: space-evenly; /* Links evenly spread honge */
+}
+
+footer {
+background-color: #343a40;
+color: white;
+text-align: center;
+padding: 15px 0;
+margin-top: 50px;
+}
+
+
+/*shipping css*/
+/* Navbar Top (Sticky) */
+.navbar:first-of-type {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    flex-grow: 1;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400px;
+    line-height: 1.5;
+}
+
+/* Bottom Navbar Styling */
+.navbar-dark {
+    background-color: #212529 !important;
+}
+
+.navbar-dark .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect: Border around links */
+.navbar-dark .nav-link:hover {
+    background-color: #495057;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+
+/* Navbar Links Spacing */
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; /* Links evenly spread honge */
+}
+
+/* Active Link */
+.navbar-nav .active {
+    color: #ffc107 !important;
+    font-weight: 600;
+}
+
+/* Main Content */
+main {
+    background: rgba(255, 160, 122, 0.582);
+    padding: 50px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+    }
+    main {
+        width: 95%;
+        padding: 30px;
+    }
+}
+
+
+
+
+/*About us css*/
+
+/* About Section */
+.container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+/* Policies Section */
+.policy-section {
+    background: rgba(255, 160, 122, 0.836);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.policy-section h3 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.policy-section ul {
+    padding-left: 20px;
+}
+
+.policy-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Google Maps */
+iframe {
+    border-radius: 8px;
+}
+
+/* Navbar Top (Sticky) */
+.navbar:first-of-type {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+    
+    /* Search Bar Styling */
+    .search-bar {
+    flex-grow: 1;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400px;
+    line-height: 1.5;
+    }
+    
+    /* Bottom Navbar Styling */
+    .navbar-dark {
+    background-color: #212529 !important;
+    }
+    
+    .navbar-dark .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    }
+    
+    /* Hover Effect: Border around links */
+    .navbar-dark .nav-link:hover {
+    background-color: #495057;
+    border-radius: 4px;
+    border: 1px solid white;
+    }
+    
+    
+    /* Navbar Links Spacing */
+    .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; /* Links evenly spread honge */
+    }
+    
+    
+/*contact css*/
+    #contact{
+        background-image: url("contact.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    /*track*/
+#track{
+    background-image: url("track.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us - Furniture Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="index1.css">
+</head>
+
+<body id="contact">
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black shadow-sm">
+            <div class="container">
+                <!-- Left: Logo -->
+                <a class="navbar-brand text-white fw-bold" href="index.html">🛋 Furniture Store</a>
+    
+                <!-- Center: Search Bar -->
+                <form class="d-flex search-bar">
+                    <input class="form-control me-2" type="search" placeholder="Search for furniture..." aria-label="Search">
+                    <button class="btn btn-warning" type="submit">search<i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    
+        <!-- Bottom Strip Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index1.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trackorder.html">Track Order</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policies</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shipping.html">Shipping</a></li>
+                                <li><a class="dropdown-item" href="refund.html">Refund</a></li>
+                                <li><a class="dropdown-item" href="terms.html">Terms & Conditions</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link text-warning" href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="container mt-5">
+        <h2 class="text-center" style="color: black;">Contact Us</h2>
+        <form class="w-50 mx-auto" onsubmit="return validateContactForm()">
+            <div class="mb-3">
+                <label class="form-label"  style="color: black;">Name</label>
+                <input type="text" id="contactName" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" style="color: black;">Email</label>
+                <input type="email" id="contactEmail" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" style="color: black;">Message</label>
+                <textarea id="contactMessage" class="form-control" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>We provide the best quality furniture at affordable prices. Transform your home with our elegant and durable furniture.</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Policies -->
+                <div class="col-md-3">
+                    <h5>Policies</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Information -->
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@furniturestore.com</p>
+                    <p>Phone: +91 9876543210</p>
+                    <p>Address: Agra, India</p>
+                </div>
+            </div>
+    
+            <hr>
+    
+            <!-- Social Media and Copyright -->
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <p>&copy; 2025 Furniture Store. All rights reserved.</p>
+                    <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="trackorder.js"></script>
+    <link rel="stylesheet" href="index1.css">
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+        }
+
+         .navbar-brand {
+            color: #ff0000 !important; 
+            font-weight: bold;
+        }  */
+
+        /* .navbar-nav .nav-link {
+            transition: 0.3s ease-in-out;
+        } */
+
+        /* .navbar-dark .nav-link:hover {
+    background-color: #495057;
+    border-radius: 4px;
+    border: 1px solid white;
+} */
+
+        /* .track-form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section {
+            margin-top: 50px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        } */
+
+        /* Navbar Top (Sticky) */
+        /* .navbar:first-of-type {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+} */
+
+        /* Search Bar Styling */
+        /* .search-bar {
+    flex-grow: 1;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400px;
+    line-height: 1.5;
+}
+ */
+        /* Bottom Navbar Styling */
+        /* .navbar-dark {
+    background-color: #212529 !important;
+}
+
+.navbar-dark .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+} */
+
+        /* Hover Effect: Border around links */
+        /* .navbar-dark .nav-link:hover {
+    background-color: #495057;
+    border-radius: 4px;
+    border: 1px solid white;
+} */
+
+
+        /* Navbar Links Spacing */
+        /* .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+} */
+    </style>
+</head>
+
+<body id="track">
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-black shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="index1.html">🛋 Furniture Store</a>
+
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <form class="d-flex search-bar w-50">
+                    <input class="form-control me-2" type="search" placeholder="Search furniture..."
+                        aria-label="Search">
+                    <button class="btn btn-warning" type="submit">search<i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bottom Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trackorder.html">Track Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policies</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="shipping.html">Shipping</a></li>
+                            <li><a class="dropdown-item" href="refund.html">Refund</a></li>
+
+                            <li><a class="dropdown-item" href="terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="cart.html"><i
+                                class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Track Order Section -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <div class="track-form">
+                    <h2 class="text-center mb-4">Track Your Order</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="orderNumber" class="form-label">Order Number</label>
+                            <input type="text" class="form-control" id="orderNumber"
+                                placeholder="Enter your order number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="awsNumber" class="form-label">AWS Number</label>
+                            <input type="text" class="form-control" id="awsNumber" placeholder="Enter your AWS number">
+                        </div>
+                        <div id="trackingResult" class="mt-3"></div>
+                        <button type="submit" class="btn btn-primary w-100">Track Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container faq-section">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="faq-item">
+                    <h5>How do I find my order number?</h5>
+                    <p>Your order number can be found in your order confirmation email or on your order history page.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h5>What is an AWS number?</h5>
+                    <p>An AWS number (Air Waybill) is a tracking number provided by the shipping carrier.</p>
+                </div>
+                <div class="faq-item">
+                    <h5>How long does shipping take?</h5>
+                    <p>Shipping times vary depending on your location. Please refer to your order confirmation.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="faq-item">
+                    <h5>My order is delayed. What should I do?</h5>
+                    <p>If your order is delayed, contact customer support with your order and AWS number.</p>
+                </div>
+                <div class="faq-item">
+                    <h5>How do I return an item?</h5>
+                    <p>To return an item, visit our returns page and follow the instructions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>We provide the best quality furniture at affordable prices. Transform your home with our elegant
+                        and durable furniture.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Policies -->
+                <div class="col-md-3">
+                    <h5>Policies</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@furniturestore.com</p>
+                    <p>Phone: +91 9876543210</p>
+                    <p>Address: Agra, India</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Social Media and Copyright -->
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <p>&copy; 2025 Furniture Store. All rights reserved.</p>
+                    <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

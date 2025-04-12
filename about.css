@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* About Section */
+.container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+/* Policies Section */
+.policy-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.policy-section h3 {
+    font-size: 1.5rem;
+    color: #d35400;
+    margin-bottom: 10px;
+}
+
+.policy-section ul {
+    padding-left: 20px;
+}
+
+.policy-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Google Maps */
+iframe {
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0;
+    font-size: 1rem;
+}

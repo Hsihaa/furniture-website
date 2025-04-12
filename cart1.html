@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index1.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <a href="cart.html"></a>
+</head>
+<body style="background-color: rgba(255, 160, 122, 0.836);">
+
+    <!-- 📌 Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-black shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="index1.html">🛋 Furniture Store</a>
+
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <form class="d-flex search-bar w-50">
+                    <input class="form-control me-2" type="search" placeholder="Search furniture..."
+                        aria-label="Search">
+                    <button class="btn btn-warning" type="submit">Search <i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 📌 Bottom Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trackorder.html">Track Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policies</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="shipping.html">Shipping</a></li>
+                            <li><a class="dropdown-item" href="refund.html">Refund</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="cart1.html">
+                            <i class="fas fa-shopping-cart"></i> Cart <span id="cart-count"
+                                class="badge bg-danger">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 📌 Shopping Cart Section -->
+    <div class="container mt-5">
+        <h2 class="text-center">🛒 Shopping Cart</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+        <div class="d-flex justify-content-between mt-3">
+            <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+            <button class="btn btn-success"onclick="Checkout()">Proceed to Checkout</button>
+            <div class="text-end fw-bold mt-3">
+                Total Amount: ₹<span id="cart-total">0</span>
+            </div>            
+        </div>
+    </div>
+
+
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>We provide the best quality furniture at affordable prices. Transform your home with our elegant and durable furniture.</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Policies -->
+                <div class="col-md-3">
+                    <h5>Policies</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Information -->
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@furniturestore.com</p>
+                    <p>Phone: +91 9876543210</p>
+                    <p>Address: Agra, India</p>
+                </div>
+            </div>
+    
+            <hr>
+    
+            <!-- Social Media and Copyright -->
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <p>&copy; 2025 Furniture Store. All rights reserved.</p>
+                    <a href="#" class="me-2">Facebook<i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-2">Instagram<i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

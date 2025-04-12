@@ -1,0 +1,118 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+/* Navbar Top (Sticky) */
+.navbar:first-of-type {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    flex-grow: 1;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400px;
+    line-height: 1.5;
+}
+
+/* Bottom Navbar Styling */
+.navbar-dark {
+    background-color: #212529 !important;
+}
+
+.navbar-dark .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect: Border around links */
+.navbar-dark .nav-link:hover {
+    background-color: #495057;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+
+/* Navbar Links Spacing */
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; /* Links evenly spread honge */
+}
+
+/* Active Link */
+.navbar-nav .active {
+    color: #ffc107 !important;
+    font-weight: 600;
+}
+
+/* Main Content */
+main {
+    background: white;
+    padding: 50px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+    }
+    main {
+        width: 95%;
+        padding: 30px;
+    }
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}

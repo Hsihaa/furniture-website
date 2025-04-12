@@ -1,0 +1,73 @@
+.card {
+    margin-bottom: 20px;
+}
+
+/* Navbar Links Spacing */
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; /* Links evenly spread honge */
+}
+
+/* Navbar Top (Sticky) */
+.navbar:first-of-type {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    flex-grow: 1;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400px;
+    line-height: 1.5;
+}
+
+/* Bottom Navbar Styling */
+.navbar-dark {
+    background-color: #212529 !important;
+}
+
+.navbar-dark .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect: Border around links */
+.navbar-dark .nav-link:hover {
+    background-color: #495057;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn {
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+.product-img {
+    height: 250px; /* Sab images ek height ki rahengi */
+    object-fit: cover; /* Image crop ho jayegi but distorted nahi hogi */
+}
